@@ -22,6 +22,11 @@ func SumTails(args ...[]int) []int {
 	var result []int
 
 	for _, arg := range args {
+		if len(arg) == 0 {
+			result = append(result, 0)
+			continue
+		}
+
 		result = append(result, Sum(arg[1:]))
 	}
 
