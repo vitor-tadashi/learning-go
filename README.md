@@ -17,6 +17,7 @@ Go inside each folder and run:
 ```
 go test
 ```
+
 or in case you want to run the benchmark:
 ```
 go test -bench=.
